@@ -1,31 +1,47 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 12:47:39 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/11 12:47:42 by sozbayra         ###   ########.fr       */
+/*   Created: 2022/10/11 16:23:25 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/18 18:34:44 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strdup(const char *str)
+char	*ft_strtrim(char const *s1, char const *set)
 {
-	char	*s;
-	size_t	i;
-
-	s = malloc(sizeof(str) * (ft_strlen(str) + 1));
-	i = 0;
-	if (!s)
-		return (0);
-	while (str[i])
+    char *s;
+	s = malloc(sizeof(char) * sizeof(s1));
+	int i = 0;
+    int j;
+	int k = 0;
+	int controller = 0;
+	while(s1[i])
 	{
-		s[i] = str[i];
+		j = 0;
+		while(set[j] && controller == 0)
+		{
+			if(s1[i] == set[j])
+			{
+				k++;
+			}
+			else
+				s[k] = s1[i];
+			j++;
+		}
 		i++;
 	}
-	s[i] = 0;
-	return (s);
+    s[i] = 0;
+    return(s);
+}
+
+#include <stdio.h>
+int main()
+{
+    char s[] = "japan";
+    printf("%s", ft_strtrim(s, "aj"));
 }

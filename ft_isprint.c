@@ -1,31 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/11 12:47:39 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/11 12:47:42 by sozbayra         ###   ########.fr       */
+/*   Created: 2022/10/04 17:31:37 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/04 17:35:33 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_strdup(const char *str)
+int	ft_isprint(char c)
 {
-	char	*s;
-	size_t	i;
-
-	s = malloc(sizeof(str) * (ft_strlen(str) + 1));
-	i = 0;
-	if (!s)
-		return (0);
-	while (str[i])
-	{
-		s[i] = str[i];
-		i++;
-	}
-	s[i] = 0;
-	return (s);
+	return (c >= 32 && c <= 126);
 }
