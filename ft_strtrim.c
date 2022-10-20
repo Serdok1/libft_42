@@ -6,36 +6,61 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:23:25 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/18 19:02:40 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/20 15:55:59 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
+int    control(char c, char const *set)
+{
+    int    i;
+
+    i = 0;
+    while (set[i])
+    {
+        if (set[i] == c)
+            return (1);
+        i++;
+    }
+    return (0);
+}
+
+int		len(const char *str, const char *set)
+{
+	int		i;
+	int		count;
+	i = 0;
+	count = 0;
+	while (str[i])
+	{
+		if (control(str[i], set) == 1)
+			count++;
+		i++;
+	}
+	return(count);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
-    char *s;
-	s = malloc(sizeof(char) * sizeof(s1));
-	int i = 0;
+	char *s;
+	int i;
     int j;
-	int k = 0;
-	int controller = 0;
+	i = 0;
+	j = 0;
+	s = malloc(sizeof(*s) * len(s1, set));
+	if(!s)
+		return(0);
 	while(s1[i])
 	{
-		j = 0;
-		while(set[j] && controller == 0)
+		if(control(s1[i], set) == 0)
 		{
-			if(s1[i] == set[j])
-			{
-				k++;
-			}
-			else
-				s[k] = s1[i];
+			s[j] = s1[i];
 			j++;
 		}
 		i++;
 	}
-    s[i] = 0;
+    s[j] = 0;
     return(s);
 }
 
@@ -44,4 +69,4 @@ int main()
 {
     char s[] = "japan";
     printf("%s", ft_strtrim(s, "aj"));
-}
+}	
