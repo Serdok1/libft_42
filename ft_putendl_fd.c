@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/22 15:20:00 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/22 15:20:00 by sozbayra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void ft_putstr_fd(char *s, int fd)
@@ -11,12 +23,4 @@ void ft_putstr_fd(char *s, int fd)
         i++;
     }
     write(fd, "\n", 1);
-}
-
-#include<fcntl.h> 
-#include <stdio.h>
-int main()
-{
-    int fd = open("foo.txt", O_RDWR | O_CREAT); 
-    ft_putstr_fd("selam", fd);
 }

@@ -6,13 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:23:25 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/20 15:55:59 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/22 15:23:21 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int    control(char c, char const *set)
+static int    control(char c, char const *set)
 {
     int    i;
 
@@ -26,7 +26,7 @@ int    control(char c, char const *set)
     return (0);
 }
 
-int		len(const char *str, const char *set)
+static int		len(const char *str, const char *set)
 {
 	int		i;
 	int		count;
@@ -63,10 +63,3 @@ char	*ft_strtrim(char const *s1, char const *set)
     s[j] = 0;
     return(s);
 }
-
-#include <stdio.h>
-int main()
-{
-    char s[] = "japan";
-    printf("%s", ft_strtrim(s, "aj"));
-}	

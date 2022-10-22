@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/22 15:22:44 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/22 15:22:45 by sozbayra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 int ft_strncmp(const char *str1, const char *str2, size_t n)
@@ -14,12 +26,4 @@ int ft_strncmp(const char *str1, const char *str2, size_t n)
     if(n == 0)
         return(str1[i] - str2[i]);
     return(0);
-}
-
-#include <stdio.h>
-int main()
-{
-    char a[] = "ASwasc";
-    char b[] = "badswcAS";
-    printf("%d", ft_strncmp(b,a,3));
 }

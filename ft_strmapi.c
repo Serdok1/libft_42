@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:33:24 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/20 17:57:07 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/22 15:22:39 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,7 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char))
   s2[i] = 0;
   return (s2);
 }
-
+/* 
 #include <stdio.h>
 char my_func(unsigned int i, char str)
 {
@@ -49,4 +49,4 @@ int main()
 	char *result = ft_strmapi(str, my_func);
  	printf("The result is %s\n", result);
  	return 0;
-}
+} */

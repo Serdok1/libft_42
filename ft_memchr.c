@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/22 15:19:24 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/22 15:19:25 by sozbayra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memchr(const void *str, int c, size_t n)
@@ -12,10 +24,4 @@ void	*ft_memchr(const void *str, int c, size_t n)
         i++;
 	}
     return(0);
-}
-#include <stdio.h>
-int	main(void)
-{
-	char s[] = "sina";
-	printf("%s", ft_memchr(s, 'n', 3));
 }

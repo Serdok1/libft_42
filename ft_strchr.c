@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/22 15:20:30 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/22 15:20:31 by sozbayra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char    *ft_strchr(const char *s, int c)
@@ -11,10 +23,4 @@ char    *ft_strchr(const char *s, int c)
         i++;
     }
     return(0);
-}
-#include <stdio.h>
-int main()
-{
-    char s[] = "sina";
-    printf("%s", ft_strchr(s, 'b'));
 }
