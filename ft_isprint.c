@@ -6,9 +6,11 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 17:31:37 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/04 17:35:33 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/25 15:32:42 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isprint(char c)
 {

@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 15:20:30 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/22 15:20:31 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/25 17:59:26 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 
 char    *ft_strchr(const char *s, int c)
 {
-    int i;
-    i = 0;
-    while(s[i])
-    {
-        if(s[i] == c)
-            return((char *)(s + i));
-        i++;
-    }
+    while(*s != '\0' && c != *s)
+        s++;
+    if(*s == c)
+        return((char *)s);
     return(0);
 }

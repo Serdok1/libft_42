@@ -6,13 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 15:20:00 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/22 15:20:00 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:41:05 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr_fd(char *s, int fd)
+void ft_putendl_fd(char *s, int fd)
 {
     int     i;
     

@@ -6,11 +6,11 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:20:06 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/22 15:21:16 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:39:47 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+/* #include "libft.h"
 
 static int     len(char const *s, char c)
 {
@@ -44,3 +44,4 @@ char    **ft_split(char const *s, char c)
     }
     return (s2);
 }
+ */

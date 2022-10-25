@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:02:51 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/22 14:56:29 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/25 13:47:12 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,8 @@ char	*ft_strrchr(const char *s, int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-void ft_putchar_fd(char c, int fd);
-void ft_putstr_fd(char *s, int fd);
+void    ft_putchar_fd(char c, int fd);
+void    ft_putstr_fd(char *s, int fd);
+void    ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 #endif
