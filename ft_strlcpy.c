@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 23:21:02 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/20 16:04:15 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/10/27 17:27:46 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,12 +17,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	size_t	i;
 
 	i = 0;
-	if (size)
+	if (size != 0)
+	{
 		while (src[i] && i < (size - 1))
 		{
 			dst[i] = src[i];
 			i++;
 		}
-	dst[i] = 0;
+		dst[i] = 0;
+	}
 	return (ft_strlen(src));
 }

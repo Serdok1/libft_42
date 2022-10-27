@@ -1,13 +1,23 @@
-/* #include "libft.h"
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2022/10/27 14:54:12 by sozbayra          #+#    #+#             */
+/*   Updated: 2022/10/27 17:39:19 by sozbayra         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strnstr(const char	*big, const char *little, size_t len)
 {
     size_t	i;
 	size_t	j;
 
-	i = 0;
-	while (little[i])
-		i++;
+	i = ft_strlen(little);
 	if (i == 0)
 		return ((char *)big);
 	i = 0;
@@ -26,9 +36,3 @@ char *ft_strnstr(const char	*big, const char *little, size_t len)
 	}
 	return (0);
 }
-
-#include <stdio.h>
-int main()
-{
-    printf("%s", ft_strnstr("123456", "456", 7));
-} */
