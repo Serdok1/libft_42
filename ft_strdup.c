@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 12:47:39 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/11 12:47:42 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/18 09:17:16 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strdup(const char *str)
 	char	*s;
 	size_t	i;
 
-	s = malloc(sizeof(str) * (ft_strlen(str) + 1));
+	s = malloc(sizeof(char) * (ft_strlen(str) + 1));
 	i = 0;
 	if (!s)
 		return (0);
