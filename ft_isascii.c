@@ -6,13 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 17:26:56 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/25 15:32:23 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/17 16:50:25 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii(char c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
 	{

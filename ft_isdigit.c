@@ -6,13 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 16:41:34 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/25 15:31:59 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/17 16:50:24 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(char c)
+int	ft_isdigit(int c)
 {
 	if (c >= '0' && c <= '9')
 	{

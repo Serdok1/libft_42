@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 11:59:19 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/11 12:00:02 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/18 08:45:45 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int	ft_atoi(const char *str)
 {
-	int	i;
-	int	is_neg;
-	int	res;
+	int				i;
+	long long int	is_neg;
+	long long int	res;
 
 	if (!str)
 		return (0);

@@ -6,13 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/04 17:31:37 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/25 15:32:42 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/17 16:50:26 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isprint(char c)
+int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
