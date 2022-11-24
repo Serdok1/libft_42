@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:23:25 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/11/17 12:53:30 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/24 10:12:23 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size_t	start;
 	size_t	end;
 
+	if (!s1)
+		return (NULL);
 	start = 0;
 	while (s1[start] && control(s1[start], set))
 		start++;
