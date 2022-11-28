@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/22 15:19:24 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/22 15:19:25 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/28 16:30:42 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memchr(const void *str, int c, size_t n)
 	{
 		if (*(unsigned char *)(str + i) == (unsigned char)c)
 			return ((char *)(str + i));
-        i++;
+		i++;
 	}
-    return(0);
+	return (0);
 }
