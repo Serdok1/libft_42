@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 16:33:24 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/11/24 10:12:54 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/28 17:04:18 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,19 +36,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	s2[i] = 0;
 	return (s2);
 }
-/* 
-#include <stdio.h>
-char	my_func(unsigned int i, char str)
-{
- 	printf("My inner function: index = %d and %c\n", i, str);
- 	return (str - 32);
-}
-
-int	main(void)
-{
-    char str[10] = "hello.";
-	printf("The result is %s\n", str);
-	char *result = ft_strmapi(str, my_func);
- 	printf("The result is %s\n", result);
- 	return (0);
-} */

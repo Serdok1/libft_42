@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/11 16:23:25 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/11/24 10:12:23 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/28 17:04:34 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,37 +50,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = 0;
 	return (str);
 }
-
-/* static int		len(const char *str, const char *set)
-{
-	int		i;
-	int		count;
-	i = 0;
-	count = 0;
-	while (str[i])
-	{
-		if (control(str[i], set) == 1)
-			count++;
-		i++;
-	}
-	return(count);
-} */
-/* char *s;
-	size_t i;
-    size_t j;
-	i = 0;
-	j = 0;
-	s = malloc(sizeof(*s) * (len(s1, set) + 1));
-	if(!s)
-		return(0);
-	while(s1[i])
-	{
-		if(control(s1[i], set) == 0)
-		{
-			s[j] = s1[i];
-			j++;
-		}
-		i++;
-	}
-    s[j] = 0;
-    return(s); */

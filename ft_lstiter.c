@@ -6,7 +6,7 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/24 10:07:07 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/11/28 15:05:33 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/28 17:02:56 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,3 @@ void	ft_lstiter(t_list *lst, void (*f)(void *))
 		lst = lst->next;
 	}
 }
-
-/* int main()
-{
-	t_list *r;
-	r = ft_lstnew("abc");
-	ft_lstadd_back(&r, ft_lstnew("def"));
-} */
