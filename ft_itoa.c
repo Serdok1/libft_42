@@ -6,12 +6,75 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/27 16:17:51 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/10/27 16:22:05 by sozbayra         ###   ########.fr       */
+/*   Updated: 2022/11/28 15:10:58 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-/* char *ft_itoa(int n){
-    
-} */
+size_t	ft_int_len(long nb)
+{
+	size_t	count;
+
+	count = 0;
+	if (nb < 0)
+		nb *= -1;
+	while (nb > 0)
+	{
+		nb /= 10;
+		count++;
+	}
+	return (count);
+}
+
+char	*ft_int_to_asci(long nb, size_t count, int flag)
+{
+	int		s;
+	int		i;
+	char	*str;
+
+	i = 0;
+	s = 1;
+	str = ft_calloc(count, sizeof(char));
+	if (!str)
+		return (0);
+	if (flag == -1)
+	{
+		str[i] = '-';
+		i++;
+	}
+	while (s <= nb / 10)
+		s *= 10;
+	while (s != 0)
+	{
+		str[i] = (nb / s % 10 + '0');
+		s /= 10;
+		i++;
+	}
+	str[i] = 0;
+	return (str);
+}
+
+char	*ft_itoa(int n)
+{
+	char	*str;
+	size_t	len;
+	long	nb;
+
+	nb = n;
+	len = ft_int_len(nb) + 1;
+	if (nb < 0)
+	{
+		len++;
+		nb *= -1;
+		return (ft_int_to_asci(nb, len, -1));
+	}
+	else if (nb == 0)
+	{
+		str = ft_calloc(2, sizeof(char));
+		str[0] = 48;
+		str[1] = 0;
+		return (str);
+	}
+	return (ft_int_to_asci(nb, len, 1));
+}
