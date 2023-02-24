@@ -6,14 +6,13 @@
 /*   By: sozbayra <sozbayra@student.42istanbul.c    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 15:02:51 by sozbayra          #+#    #+#             */
-/*   Updated: 2022/11/28 16:22:56 by sozbayra         ###   ########.fr       */
+/*   Updated: 2023/02/24 16:25:24 by sozbayra         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
 
